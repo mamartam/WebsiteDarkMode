@@ -1,16 +1,18 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.hero{
+
+.hero {
     height: 100vh;
     width: 100%;
     background-color: #edf2fc;
     font-family: sans-serif;
     position: relative;
 }
-nav{
+
+nav {
     width: 84%;
     margin: auto;
     padding: 20px 0;
@@ -18,19 +20,114 @@ nav{
     align-items: center;
     justify-content: space-between;
 }
-.logo{
+
+.logo {
     width: 200px;
     cursor: pointer;
 }
-nav ul li{
+
+nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
     color: #606163;
 }
-nav ul li a:hover{
-    color: #ff4321;
+
+nav ul li a:hover {
+    color: #228B22;
+}
+
+.info {
+    margin-left: 8%;
+    margin-top: 15%;
+
+}
+
+.info h1 {
+    font-size: 70px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+
+span {
+    color: #228B22;
+}
+
+.info p {
+    color: #606163;
+    line-height: 22px;
+}
+
+.info a {
+    background-color: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+/* ---------------------------- */
+.fancy-border-radius {
+    border-radius: 87% 13% 16% 84% / 82% 43% 57% 18%;
+    width: 400px;
+    height: 400px;
+    background-color: #228B22;
+    position: relative;
+    /* transition: width .5s linear; */
+    /* animation-iteration-count: 1; */
+    animation: anima 8s linear 1s infinite backwards running;
+
+}
+
+@keyframes anima {
+    0% {
+        border-radius: 87% 13% 16% 84% / 82% 43% 57% 18%;
+
+    }
+
+    25% {
+        border-radius: 68% 32% 29% 71% / 75% 58% 42% 25%;
+    }
+
+    50% {
+        border-radius: 44% 56% 50% 50% / 49% 76% 24% 51%;
+    }
+
+    75% {
+        border-radius: 58% 42% 69% 31% / 31% 94% 6% 69%;
+    }
+
+    100% {
+        border-radius: 87% 13% 16% 84% / 82% 43% 57% 18%;
+    }
+
+}
+
+/* .img-box:hover .fancy-border-radius {
+    width:450px;
+
+} */
+
+.img-box {
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+
+.img-box img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s;
 }
